@@ -2,9 +2,13 @@ package com.example.coba_listview1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -43,5 +47,21 @@ public class MainActivity extends Activity {
         //custom adapter in here....
         CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(),countryList,pic,desc);
         simpleList.setAdapter(customAdapter);
+        simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                String Lists = countryList[position].toString();
+                int pictures = pic[position];
+                String descriptions = desc[position].toString();
+
+                //Toast.makeText(MainActivity.this,""+pictures, Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(MainActivity.this,DetailItems.class);
+                intent.putExtra("lists_key",Lists);
+                intent.putExtra("pictures_key",pictures);
+                intent.putExtra("descriptions_key",descriptions);
+                startActivity(intent);
+            }
+        });
     }
 }
