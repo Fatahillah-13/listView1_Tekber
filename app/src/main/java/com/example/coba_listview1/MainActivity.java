@@ -14,7 +14,7 @@ public class MainActivity extends Activity {
 
     ListView simpleList;
     String countryList[]={
-      "A",
+      "Anggur",
       "B",
       "C",
       "D",
@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
     };
 
     String desc[]={
-            "Description A",
+            "Description Anggur merupakan",
             "Description B",
             "Description C",
             "Description D",
