@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".HomePage">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="Title"
+        android:textStyle="bold"
+        android:textSize="36dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/pic"
+        android:src="@drawable/profile_pic"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:text="Fatahillah Abid"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="@color/teal_200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/number"
+        android:text="A12.2020.06454"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Lihat List Buah"/>
+
+</LinearLayout>
