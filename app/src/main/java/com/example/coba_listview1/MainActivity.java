@@ -54,8 +54,6 @@ public class MainActivity extends Activity {
                 int pictures = pic[position];
                 String descriptions = desc[position].toString();
 
-                //Toast.makeText(MainActivity.this,""+pictures, Toast.LENGTH_SHORT).show();
-
                 Intent intent = new Intent(MainActivity.this,DetailItems.class);
                 intent.putExtra("lists_key",Lists);
                 intent.putExtra("pictures_key",pictures);
